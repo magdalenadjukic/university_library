@@ -1,0 +1,26 @@
+# ==========================================
+# NETBEANS
+# ==========================================
+
+# NetBeans privatni podaci (lokalni za svaki racunar)
+nbproject/private/
+
+# Kompajlirani fajlovi
+build/
+dist/
+nbbuild/
+nbdist/
+
+# Java kompajlirani fajlovi
+*.class
+
+# ==========================================
+# OPERATIVNI SISTEM
+# ==========================================
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Mac (ako neko radi na Macu)
+.DS_Store
