@@ -4,6 +4,7 @@
  */
 package konfiguracija;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -19,37 +20,39 @@ import java.util.logging.Logger;
 public class Konfiguracija {
     private static Konfiguracija instance;
     private Properties konfiguracija;
+    
     private Konfiguracija() {
         try {
-            konfiguracija=new Properties();
-            konfiguracija.load(new FileInputStream("C:\\Users\\DELL\\Desktop\\FON\\PSW\\0_SEMINARSKI_PS\\0_SEMINARSKI_SERVER\\config\\config.properties"));
+            konfiguracija = new Properties();
+            String path = System.getProperty("user.dir") + File.separator + "config" + File.separator + "config.properties";
+            konfiguracija.load(new FileInputStream(path));
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
         } catch (IOException ex) {
             ex.printStackTrace();
         }
     }
-
+    
     public static Konfiguracija getInstance() {
-        if(instance==null)
-            instance=new Konfiguracija();
+        if (instance == null)
+            instance = new Konfiguracija();
         return instance;
     }
-    public String getProperty(String key){
-        return konfiguracija.getProperty(key,"n/a");
+    
+    public String getProperty(String key) {
+        return konfiguracija.getProperty(key, "n/a");
     }
-    public void setProperty(String key,String value){
+    
+    public void setProperty(String key, String value) {
         konfiguracija.setProperty(key, value);
     }
     
-    public void saveChanges(){
-       
+    public void saveChanges() {
         try {
-            konfiguracija.store(new FileOutputStream("C:\\Users\\DELL\\Desktop\\FON\\PSW\\0_SEMINARSKI_PS\\0_SEMINARSKI_SERVER\\config\\config.properties"), null);
+            String path = System.getProperty("user.dir") + File.separator + "config" + File.separator + "config.properties";
+            konfiguracija.store(new FileOutputStream(path), null);
         } catch (IOException ex) {
             ex.printStackTrace();
         }
     }
-    
-    
 }

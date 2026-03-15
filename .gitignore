@@ -25,5 +25,3 @@ desktop.ini
 # For Mac
 .DS_Store
 
-# Konfiguracija sa lozinkama
-**/config.properties
