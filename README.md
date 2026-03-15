@@ -20,8 +20,8 @@ The application follows a \*\*client/server architecture\*\* with socket communi
 
 \- Socket communication
 
-## Design Patterns
-- **Template Method Pattern** — used for defining the skeleton of operations on the server side
+\## Design Patterns
+**Template Method Pattern** — used for defining the skeleton of operations on the server side
 
 \## Project Structure
 
