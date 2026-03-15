@@ -33,6 +33,8 @@ university_library/
 ## Setup
 1. Clone the repository
 2. Create a database named `0_seminarski_biblioteka` and import `baza.sql`
-3. Copy `config.example.properties` → `config.properties` and fill in your database credentials
+3. Open `0_SEMINARSKI_SERVER/config/config.properties` and update with your database credentials
 4. Open projects in NetBeans in this order: `0_SEMINARSKI_ZAJEDNICKI` → `0_SEMINARSKI_SERVER` → `0_SEMINARSKI_KLIJENT`
-5. Start `0_SEMINARSKI_SERVER` first, then `0_SEMINARSKI_KLIJENT`
+5. Add `0_SEMINARSKI_ZAJEDNICKI` as a library dependency in both `0_SEMINARSKI_SERVER` and `0_SEMINARSKI_KLIJENT` (Properties → Libraries → Add JAR/Folder)
+6. Add `lib/mysql-connector-j-9.5.0.jar` to `0_SEMINARSKI_SERVER` libraries
+7. Start `0_SEMINARSKI_SERVER` first, then `0_SEMINARSKI_KLIJENT`
