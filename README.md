@@ -2,11 +2,12 @@
 
 
 
-A Java desktop application built as a project for the Software Design course.  
+A Java-based software system for tracking and managing university library operations, including book lending, student management, and duty scheduling. 
 
 The application follows a client-server architecture with socket communication and a MySQL database.
 
-
+## Design Patterns
+**Template Method Pattern** — used for defining the skeleton of operations on the server side
 
 \## Technologies
 
@@ -20,8 +21,7 @@ The application follows a client-server architecture with socket communication a
 
 \- Socket communication
 
-\## Design Patterns
-**Template Method Pattern** — used for defining the skeleton of operations on the server side
+\
 
 \## Project Structure
 
