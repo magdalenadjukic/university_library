@@ -2,9 +2,9 @@
 
 
 
-A Java desktop application built as a seminary project for the Software Design course.  
+A Java desktop application built as a project for the Software Design course.  
 
-The application follows a \*\*client/server architecture\*\* with socket communication and a MySQL database.
+The application follows a client-server architecture with socket communication and a MySQL database.
 
 
 
