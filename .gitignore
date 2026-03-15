@@ -2,7 +2,7 @@
 # NETBEANS
 # ==========================================
 
-# NetBeans privatni podaci (lokalni za svaki racunar)
+# NetBeans privatni podaci 
 nbproject/private/
 
 # Kompajlirani fajlovi
@@ -15,12 +15,15 @@ nbdist/
 *.class
 
 # ==========================================
-# OPERATIVNI SISTEM
+# OS
 # ==========================================
 
 # Windows
 Thumbs.db
 desktop.ini
 
-# Mac (ako neko radi na Macu)
+# For Mac
 .DS_Store
+
+# Konfiguracija sa lozinkama
+**/config.properties
