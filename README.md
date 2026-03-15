@@ -6,8 +6,7 @@ A Java-based software system for tracking and managing university library operat
 
 The application follows a client-server architecture with socket communication and a MySQL database.
 
-Design Pattern
-**Template Method Pattern** — used for defining the skeleton of operations on the server side
+Design Pattern - **Template Method Pattern** (used for defining the skeleton of operations on the server side)
 
 \## Technologies
 
