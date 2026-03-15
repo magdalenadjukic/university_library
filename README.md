@@ -1,124 +1,38 @@
-\# University Library — Client/Server Application
+# University Library — Client/Server System
 
+A Java-based software system for tracking and managing university library operations, including book lending, student management, and duty scheduling.  
+The application follows a client/server architecture with socket communication and a MySQL database.
 
+## Technologies
+- Java (JDK 23)
+- NetBeans IDE
+- MySQL / SQLyog
+- JDBC (MySQL Connector 9.5.0)
+- Socket communication
 
-A Java-based software system for tracking and managing university library operations, including book lending, student management, and duty scheduling. 
+## Design Pattern
+**Template Method Pattern** — used for defining the skeleton of operations on the server side
 
-The application follows a client-server architecture with socket communication and a MySQL database.
-
-Design Pattern - **Template Method Pattern** (used for defining the skeleton of operations on the server side)
-
-\## Technologies
-
-\- Java (JDK 23)
-
-\- NetBeans IDE
-
-\- MySQL / SQLyog
-
-\- JDBC (MySQL Connector 9.5.0)
-
-\- Socket communication
-
-\
-
-\## Project Structure
-
+## Project Structure
 ```
-
-university\_library/
-
-├── 0\_SEMINARSKI\_KLIJENT/     # Client application
-
-├── 0\_SEMINARSKI\_SERVER/      # Server application
-
-├── 0\_SEMINARSKI\_ZAJEDNICKI/  # Shared classes
-
+university_library/
+├── 0_SEMINARSKI_KLIJENT/     # Client application
+├── 0_SEMINARSKI_SERVER/      # Server application
+├── 0_SEMINARSKI_ZAJEDNICKI/  # Shared classes
 ├── lib/                      # MySQL Connector JAR
-
 ├── baza.sql                  # Database script
-
 └── docs/                     # Documentation
-
 ```
 
+## Features
+- User login
+- Student management
+- Book lending and returns
+- Duty schedule management
 
-
-\## Features
-
-\- User login
-
-\- Student management
-
-\- Book lending and returns
-
-\- Duty schedule management
-
-
-
-\## Getting Started
-
-
-
-\### Prerequisites
-
-\- JDK 23
-
-\- NetBeans IDE
-
-\- MySQL server
-
-
-
-\### Steps
-
-
-
-\*\*1. Clone the repository\*\*
-
-```bash
-
-git clone https://github.com/magdalenadjukic/university\_library.git
-
-```
-
-
-
-\*\*2. Set up the database\*\*
-
-\- Create a database named `0\_seminarski\_biblioteka`
-
-\- Import `baza.sql` via SQLyog or MySQL Workbench
-
-
-
-\*\*3. Configure the server\*\*
-
-\- Navigate to `0\_SEMINARSKI\_SERVER/config/`
-
-\- Copy `config.example.properties` → `config.properties`
-
-\- Fill in your database credentials
-
-
-
-\*\*4. Open in NetBeans\*\*
-
-\- Open all 3 projects in this order:
-
-&#x20; 1. `0\_SEMINARSKI\_ZAJEDNICKI`
-
-&#x20; 2. `0\_SEMINARSKI\_SERVER`
-
-&#x20; 3. `0\_SEMINARSKI\_KLIJENT`
-
-\- Add `lib/mysql-connector-j-9.5.0.jar` to Libraries if needed
-
-
-
-\*\*5. Run\*\*
-
-\- Start `0\_SEMINARSKI\_SERVER` first
-
-\- Then start `0\_SEMINARSKI\_KLIJENT`
-
+## Setup
+1. Clone the repository
+2. Create a database named `0_seminarski_biblioteka` and import `baza.sql`
+3. Copy `config.example.properties` → `config.properties` and fill in your database credentials
+4. Open projects in NetBeans in this order: `0_SEMINARSKI_ZAJEDNICKI` → `0_SEMINARSKI_SERVER` → `0_SEMINARSKI_KLIJENT`
+5. Start `0_SEMINARSKI_SERVER` first, then `0_SEMINARSKI_KLIJENT`
