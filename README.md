@@ -30,6 +30,9 @@ university_library/
 - Book lending and returns
 - Duty schedule management
 
+## Testing
+Unit tests written in JUnit 4 are included for selected system operation classes.
+
 ## Setup
 1. Clone the repository
 2. Create a database named `0_seminarski_biblioteka` and import `baza.sql`
